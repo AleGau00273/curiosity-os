@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d24">
+  <meta name="description" content="Alexander Gaudet's software development portfolio: C#, JavaScript, technical projects, and a curiosity for how technology works.">
+  <title>Alexander Gaudet | Powered by Curiosity</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to main content</a>
+  <div class="sprite-field page-sprites" aria-hidden="true" id="spriteField"></div>
+  <header class="site-header container">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <span class="navbar-brand" aria-label="Alexander Gaudet initials">AG</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="portfolioNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div class="hero-intro">
+          <p class="eyebrow">HELLO, WORLD! / WELCOME TO MY PORTFOLIO</p>
+          <h1 id="hero-heading" class="hero-name">Alexander Gaudet</h1>
+          <p class="hero-tagline">Powered by <span>Curiosity.</span></p>
+          <p class="hero-subtitle">Software Development Student · Tinkerer · Lifelong Learner</p>
+          <p class="hero-description">I explore how things work, from code and creative problem-solving to circuitry and hands-on projects. Welcome to my corner of the web.</p>
+          <div class="hero-links"><a class="btn btn-primary" href="#projects">Explore My Work ↓</a><a class="btn btn-outline-light" href="#about">Get to Know Me</a></div>
+        </div>
+        <div class="console-stage" aria-label="Curiosity OS highlights carousel">
+          <div class="handheld handheld-mini">
+            <div class="handheld-topline" aria-hidden="true"><span>AG / CURIOSITY OS</span><span>CURIO-01</span></div>
+            <div class="mini-console-layout">
+              <div class="mini-screen-bezel">
+                <div class="bezel-label"><span class="power-light" aria-hidden="true"></span> HIGHLIGHTS <span>v2.1</span></div>
+                <div class="screen mini-screen" id="consoleScreen" role="region" aria-roledescription="carousel" aria-label="Portfolio highlights" tabindex="0">
+                  <div class="screen-content" id="screenContent" aria-live="off">
+                    <p class="screen-kicker">01 / INTRO</p><h2>HELLO, WORLD!</h2><p>Curiosity is what keeps me building.</p>
+                  </div>
+                  <div class="screen-status"><span id="screenStatus">HIGHLIGHTS</span><span id="screenCounter">01 / 07</span></div>
+                </div>
+              </div>
+              <div class="mini-controls" aria-label="Carousel controls">
+                <button class="mini-control" type="button" id="previousSlide" aria-label="Previous highlight">◀</button>
+                <span class="mini-control-label">BROWSE</span>
+                <button class="mini-control" type="button" id="nextSlide" aria-label="Next highlight">▶</button>
+                <button class="mini-control console-pause" type="button" id="toggleAutoplay" aria-label="Pause automatic highlights" aria-pressed="false" title="Pause automatic highlights">Ⅱ</button>
+              </div>
+            </div>
+            <div class="screen-brand">POWERED BY <strong>CURIOSITY</strong><span class="brand-spark">✦</span></div>
+          </div>
+          <div class="carousel-footer"><div class="carousel-dots" id="carouselDots" aria-label="Choose a highlight"></div><a href="#projects" id="slideLink" class="carousel-link">View featured projects ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section container" aria-labelledby="about-heading">
+      <p class="section-index">01 / THE STORY</p><h2 id="about-heading">About Me</h2>
+      <div class="section-panel"><p>I've always been curious about how technology works. Growing up alongside the evolving internet, that curiosity led me to explore, experiment, troubleshoot, and discover just how much there is to learn.</p>
+      <p>Today, I'm studying Software Development at New Brunswick Community College, building a foundation across programming languages, frameworks, and different areas of information technology. I've come to appreciate that becoming a developer isn't about knowing everything. It's about developing the skills and mindset to keep learning.</p>
+      <p>Outside the classroom, that same curiosity carries over into hands-on projects, from restoring and modifying retro gaming hardware to working with home networking infrastructure.</p></div>
+    </section>
+
+    <section id="skills" class="content-section container" aria-labelledby="skills-heading">
+      <p class="section-index">02 / THE TOOLKIT</p><h2 id="skills-heading">Technical Skills</h2>
+      <div class="row g-3">
+        <div class="col-md-6"><div class="info-card h-100"><h3>Programming & Web</h3><p>C#, JavaScript, SQL, HTML, CSS</p><p><strong>Currently learning:</strong> Java, C++, ASP.NET Core MVC</p></div></div>
+        <div class="col-md-6"><div class="info-card h-100"><h3>Tools & Technologies</h3><p>.NET, Windows Forms, Git, GitHub, Visual Studio, VS Code, IntelliJ IDEA</p></div></div>
+        <div class="col-md-6"><div class="info-card h-100"><h3>Development Concepts</h3><p>Object-oriented programming, database design, responsive web design, testing, debugging</p></div></div>
+        <div class="col-md-6"><div class="info-card h-100"><h3>Hardware & Systems</h3><p>Computer troubleshooting, hardware upgrades, networking, soldering, Windows, introductory Linux</p></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section container" aria-labelledby="projects-heading">
+      <p class="section-index">03 / THE BUILDS</p><h2 id="projects-heading">Featured Projects</h2>
+      <div class="row g-4 featured-project-grid">
+        <div class="col-md-6"><article class="project-card h-100"><span class="project-number">PROJECT 001 · ACADEMIC SOFTWARE</span><div class="project-symbol" aria-hidden="true">▣</div><h3>EcoLink Fleet Manager</h3><p>Developed as a three-person final project for my Object-Oriented Programming course at New Brunswick Community College. This C# Windows Forms application simulates an eco-friendly delivery fleet. I designed all four application interfaces and contributed to backend implementation, integration, and debugging.</p><p class="project-meta">C# · .NET · Windows Forms · OOP</p><p class="project-credit">Team project with my classmates Abdin Ali and Jonathan Duplessis.</p><a class="btn btn-outline-light" href="#ecolink-spotlight">Explore Project ↘</a><a class="btn btn-primary" href="https://github.com/AleGau00273/OOP-Project" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article></div>
+        <div class="col-md-6"><article class="project-card h-100"><span class="project-number">PROJECT 002 · RESPONSIVE WEB</span><div class="project-symbol" aria-hidden="true">◇</div><h3>Explore Australia</h3><p>A collaborative Responsive Web Design final project. I implemented five themed content pages with CSS Grid, Flexbox, Bootstrap cards, tooltips, and accordions, then refined navigation consistency across the site.</p><p class="project-meta">HTML · CSS · Bootstrap · Git</p><p class="project-credit">Collaborative class project with my classmate Rory Hughes.</p><a class="btn btn-outline-light" href="#australia-spotlight">Explore Website ↘</a><a class="btn btn-primary" href="https://github.com/Rory-Hughes/WebFinalProject-Australia" target="_blank" rel="noopener noreferrer">View Repository ↗</a></article></div>
+        <div class="col-md-6"><article class="project-card h-100"><span class="project-number">PROJECT 003 · HARDWARE</span><div class="project-symbol" aria-hidden="true">✦</div><h3>Game Boy Advance Restoration</h3><p>Restored and upgraded a used handheld console with a new display and shell, audio amplifier, and noise-reduction modifications. An opportunity to grow my soldering and troubleshooting skills.</p><p class="project-meta">Electronics · Soldering · Restoration</p><a class="btn btn-outline-light" href="#gba-spotlight">Explore Restoration ↘</a></article></div>
+        <div class="col-md-6"><article class="project-card h-100"><span class="project-number">PROJECT 004 · NETWORKING</span><div class="project-symbol" aria-hidden="true">⌘</div><h3>Home Ethernet Installation</h3><p>Starting with no networking experience, I learned to install and terminate shielded Cat6A cabling, troubleshoot physical connections, and navigate router and ISP configuration challenges.</p><p class="project-meta">Cat6A · T568B · Troubleshooting · Networking</p><a class="btn btn-outline-light" href="#network-spotlight">Explore Installation ↘</a></article></div>
+      </div>
+    </section>
+
+
+    <section id="ecolink-spotlight" class="content-section container ecolink-spotlight" aria-labelledby="ecolink-heading">
+      <p class="section-index">03.1 / PROJECT SPOTLIGHT</p>
+      <h2 id="ecolink-heading">EcoLink Fleet Manager</h2>
+      <p class="spotlight-lead">An Object-Oriented Programming final project at New Brunswick Community College. Our three-person team built a C# Windows Forms application simulating the management of an eco-friendly delivery fleet.</p>
+      <div class="spotlight-grid">
+        <div class="gallery-panel">
+          <div class="gallery-topline"><span>ECOLINK / INTERFACE ARCHIVE</span><span id="galleryCounter">01 / 06</span></div>
+          <button class="gallery-image-button" id="galleryExpand" type="button" aria-label="View current screenshot at full size">
+            <img id="galleryImage" src="assets/images/projects/ecolink/fleet-dashboard.png" alt="EcoLink fleet dashboard showing registered vehicles and vehicle details" loading="lazy">
+            <span class="gallery-missing" id="galleryMissing" hidden>Screenshot not added yet. See the image folder README.</span>
+            <span class="gallery-expand-hint">View larger ↗</span>
+          </button>
+          <div class="gallery-caption" aria-live="polite"><h3 id="galleryTitle">Fleet Dashboard</h3><p id="galleryDescription">The central command screen for registering and reviewing vehicles, their drivers, payloads, and energy levels.</p></div>
+          <div class="gallery-controls"><button class="btn btn-outline-light" id="galleryPrevious" type="button" aria-label="Previous EcoLink screenshot">← Previous</button><div class="gallery-dots" id="galleryDots" aria-label="Choose an EcoLink screenshot"></div><button class="btn btn-primary" id="galleryNext" type="button" aria-label="Next EcoLink screenshot">Next →</button></div>
+        </div>
+        <div class="spotlight-details">
+          <div class="spotlight-detail-card"><span class="project-number">THE PROJECT · ACADEMIC</span><h3>Object-Oriented Programming final project</h3><p>Developed for a college course rather than a commercial client, EcoLink simulates vehicle registration, driver assignment, cargo management, and energy servicing in one desktop application.</p></div>
+          <div class="spotlight-detail-card"><span class="project-number">MY CONTRIBUTION</span><h3>Interface design and development</h3><p>I designed all four application interfaces and contributed to backend implementation, integration, and debugging.</p></div>
+          <div class="spotlight-detail-card"><span class="project-number">BUILT TOGETHER</span><h3>A collaborative build</h3><p>Created with my classmates Abdin Ali and Jonathan Duplessis. This was a collaborative college project, and the repository reflects our shared work.</p><p class="project-meta">C# · .NET · Windows Forms · Object-oriented programming</p><a class="btn btn-primary" href="https://github.com/AleGau00273/OOP-Project" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a></div>
+        </div>
+      </div>
+    </section>
+    <dialog id="galleryDialog" class="gallery-dialog" aria-label="EcoLink screenshot full-size viewer"><div class="gallery-dialog-inner"><div class="gallery-dialog-header"><strong id="galleryDialogTitle">EcoLink screenshot</strong><button type="button" class="btn btn-outline-light" id="galleryClose">Close ✕</button></div><img id="galleryDialogImage" alt=""><p>Press Escape or choose Close to return to the gallery.</p></div></dialog>
+
+
+    <section id="australia-spotlight" class="content-section container" aria-labelledby="australia-heading">
+      <p class="section-index">03.2 / PROJECT SPOTLIGHT</p>
+      <h2 id="australia-heading">Explore Australia</h2>
+      <p class="spotlight-lead">A collaborative Responsive Web Design final project at New Brunswick Community College. My classmate Rory Hughes developed much of the homepage and shared navigation, while I built the five themed content pages and helped bring the finished site together.</p>
+      <div class="gba-carousel" aria-label="Explore Australia website screenshot gallery">
+        <div class="gba-carousel-top"><span>AUSTRALIA / WEBSITE SCREENSHOTS</span><span id="australiaCounter">01 / 06</span></div>
+        <div class="gba-carousel-stage australia-stage" aria-live="off">
+          <figure class="gba-slide" data-australia-slide><img src="assets/images/projects/australia/homepage.webp" alt="Actual browser screenshot of the Explore Australia homepage" loading="lazy"></figure>
+          <figure class="gba-slide" data-australia-slide hidden><img src="assets/images/projects/australia/cities.webp" alt="Cities and Landmarks page featuring responsive Bootstrap cards" loading="lazy"></figure>
+          <figure class="gba-slide" data-australia-slide hidden><img src="assets/images/projects/australia/economy.webp" alt="Economy and Travel page showing the Bootstrap card layout and tooltip controls" loading="lazy"></figure>
+          <figure class="gba-slide" data-australia-slide hidden><img src="assets/images/projects/australia/history.webp" alt="History and Symbols page featuring alternating Flexbox image and text sections" loading="lazy"></figure>
+          <figure class="gba-slide" data-australia-slide hidden><img src="assets/images/projects/australia/culture.webp" alt="People and Culture page showing the Bootstrap accordion" loading="lazy"></figure>
+          <figure class="gba-slide" data-australia-slide hidden><img src="assets/images/projects/australia/land.webp" alt="Land and Climate page showing the responsive CSS Grid photo gallery" loading="lazy"></figure>
+        </div>
+        <div class="gba-carousel-caption" aria-live="polite"><h3 id="australiaSlideTitle">A Collaborative Homepage</h3><p id="australiaSlideDescription">My classmate Rory built much of the homepage, including its Bootstrap navigation and image carousel. Together, we connected it to the themed pages.</p></div>
+        <div class="gba-carousel-controls"><button class="btn btn-outline-light" type="button" id="australiaPrevious" aria-label="Previous Australia preview">← Previous</button><div class="gba-carousel-dots" id="australiaDots" aria-label="Select Australia preview"></div><button class="btn btn-primary" type="button" id="australiaNext" aria-label="Next Australia preview">Next →</button></div>
+      </div>
+      <div class="gba-detail-panel"><span class="project-number">MY CONTRIBUTION · RESPONSIVE FRONT-END</span><h3>Five pages, multiple layout techniques</h3><p>I implemented the Cities &amp; Landmarks, Economy &amp; Travel, History &amp; Symbols, People &amp; Culture, and Land &amp; Climate pages. Each let me practice a different technique, including responsive Bootstrap cards and tooltips, alternating Flexbox sections, collapsible accordions, and a CSS Grid gallery with hover captions.</p><p>I also contributed page imagery and final adjustments to navigation sizing and visual consistency. My classmate Rory Hughes contributed the homepage, carousel, and initial page structure. This was a shared academic project, with my individual changes documented in Git history.</p><p><a class="btn btn-primary" href="https://github.com/Rory-Hughes/WebFinalProject-Australia" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a></p></div>
+    </section>
+
+    <section id="gba-spotlight" class="content-section container gba-spotlight" aria-labelledby="gba-heading">
+      <p class="section-index">03.3 / PROJECT SPOTLIGHT</p>
+      <h2 id="gba-heading">Game Boy Advance Restoration</h2>
+      <p class="spotlight-lead">A personal restoration project that challenged me to go beyond basic repairs. I rebuilt a well-used original Game Boy Advance, learned more advanced soldering techniques, and gave the handheld a new lease on life.</p>
+      <div class="gba-carousel" aria-label="Game Boy Advance restoration media gallery">
+        <div class="gba-carousel-top"><span>GBA / RESTORATION ARCHIVE</span><span id="gbaCounter">01 / 07</span></div>
+        <div class="gba-carousel-stage" id="gbaStage" aria-live="off">
+          <div class="gba-comparison gba-slide" data-gba-slide>
+            <figure><img src="assets/images/projects/gba/gba-before.webp" alt="Game Boy Advance before restoration" loading="lazy"><figcaption>Before</figcaption></figure>
+            <figure><img src="assets/images/projects/gba/gba-after.webp" alt="Game Boy Advance after restoration" loading="lazy"><figcaption>After</figcaption></figure>
+          </div>
+          <figure class="gba-slide" data-gba-slide hidden><img src="assets/images/projects/gba/solder-prep.webp" alt="Soldering preparation for the restoration" loading="lazy"></figure>
+          <figure class="gba-slide" data-gba-slide hidden><img src="assets/images/projects/gba/cleanamp-installed.webp" alt="CleanAMP Pro amplifier installed on the board" loading="lazy"></figure>
+          <figure class="gba-slide" data-gba-slide hidden><img src="assets/images/projects/gba/c54-capacitor.webp" alt="Circuit board during C54 capacitor removal" loading="lazy"></figure>
+          <figure class="gba-slide" data-gba-slide hidden><img src="assets/images/projects/gba/screen-control-wires.webp" alt="Screen control wires soldered to board test points" loading="lazy"></figure>
+          <div class="gba-slide" data-gba-slide hidden><video controls preload="metadata" playsinline aria-label="Game Boy Advance power-on demonstration"><source src="assets/videos/gba/power-on-demo.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+          <div class="gba-slide" data-gba-slide hidden><video controls preload="metadata" playsinline aria-label="Game Boy Advance screen settings demonstration"><source src="assets/videos/gba/screen-settings-demo.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+        </div>
+        <div class="gba-carousel-caption" aria-live="polite"><h3 id="gbaSlideTitle">Before and After</h3><p id="gbaSlideDescription">I rebuilt a worn Game Boy Advance with a new shell and backlit screen, giving the original hardware a second life.</p></div>
+        <div class="gba-carousel-controls"><button class="btn btn-outline-light" type="button" id="gbaPrevious" aria-label="Previous restoration item">← Previous</button><div class="gba-carousel-dots" id="gbaDots" aria-label="Select restoration item"></div><button class="btn btn-primary" type="button" id="gbaNext" aria-label="Next restoration item">Next →</button></div>
+      </div>
+      <div class="gba-detail-panel"><span class="project-number">THE REBUILD</span><h3>What I changed</h3><p>I replaced the original non-backlit screen with a backlit display, fitted a replacement shell, soldered in a CleanAMP Pro audio amplifier and dehum/dehiss kit, and desoldered and replaced faulty L and R shoulder buttons. I also wired the screen ribbon to the Select, L, and R test points to control display settings such as brightness.</p><p>It was a bigger undertaking than I expected, but the experience helped me build confidence in soldering, careful disassembly, and troubleshooting. Seeing the finished console power on made the work worthwhile.</p></div>
+    </section>
+
+
+    <section id="network-spotlight" class="content-section container" aria-labelledby="network-heading">
+      <p class="section-index">03.4 / PROJECT SPOTLIGHT</p>
+      <h2 id="network-heading">Home Network Infrastructure</h2>
+      <p class="spotlight-lead">I started this project with no prior networking knowledge. Through research, hands-on practice, and AI-assisted learning, I installed structured Ethernet cabling and worked through real connection and router configuration problems along the way.</p>
+      <div class="gba-carousel" aria-label="Home network installation media gallery">
+        <div class="gba-carousel-top"><span>NETWORK / INSTALLATION ARCHIVE</span><span id="networkCounter">01 / 05</span></div>
+        <div class="gba-carousel-stage" aria-live="off">
+          <figure class="gba-slide" data-network-slide><img src="assets/images/projects/network/termination-progress.webp" alt="Shielded Ethernet cable being prepared for termination" loading="lazy"></figure>
+          <figure class="gba-slide" data-network-slide hidden><img src="assets/images/projects/network/terminated-cable.webp" alt="Terminated shielded Cat6A Ethernet cable and keystone jack" loading="lazy"></figure>
+          <figure class="gba-slide" data-network-slide hidden><img src="assets/images/projects/network/storage-closet.webp" alt="Central network equipment and cabling in a storage closet" loading="lazy"></figure>
+          <figure class="gba-slide" data-network-slide hidden><img src="assets/images/projects/network/complete.webp" alt="Completed home network installation" loading="lazy"></figure>
+          <div class="gba-slide network-video-slide" data-network-slide hidden><video controls preload="metadata" playsinline aria-label="Ethernet cable tester success demonstration"><source src="assets/videos/network/test-success.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+        </div>
+        <div class="gba-carousel-caption" aria-live="polite"><h3 id="networkSlideTitle">Learning to Terminate Cable</h3><p id="networkSlideDescription">I learned how to strip and prepare shielded Cat6A cable, arrange the conductors, and terminate them using the T568B wiring standard.</p></div>
+        <div class="gba-carousel-controls"><button class="btn btn-outline-light" type="button" id="networkPrevious" aria-label="Previous network installation item">← Previous</button><div class="gba-carousel-dots" id="networkDots" aria-label="Select network installation item"></div><button class="btn btn-primary" type="button" id="networkNext" aria-label="Next network installation item">Next →</button></div>
+      </div>
+      <div class="gba-detail-panel"><span class="project-number">FROM FIRST ATTEMPT TO WORKING NETWORK</span><h3>What I learned and built</h3><p>I selected shielded Cat6A cable, keystone jacks, a modular patch panel, wall plates, and testing tools. I terminated connections using T568B, checked wire mapping and shield continuity, and corrected failed terminations by diagnosing incomplete punch-down connections.</p><p>The project also led me into router and ISP integration, including PPPoE passthrough, VLAN settings, and double NAT. I used Gemini as a learning resource, but carried out the installation, testing, and troubleshooting myself. The biggest takeaway was discovering how much I could learn by tackling an unfamiliar problem one step at a time.</p></div>
+    </section>
+
+    <section id="experience" class="content-section container" aria-labelledby="experience-heading">
+      <p class="section-index">04 / THE JOURNEY</p><h2 id="experience-heading">Experience</h2>
+      <div class="timeline">
+        <article class="timeline-entry"><span class="timeline-date">2025</span><h3>Community Volunteer · BGC Greater Saint John</h3><p>Supported the preparation and operation of the Howl-O-Ween Hysteria community event, contributing to event coordination and on-site activities.</p></article>
+        <article class="timeline-entry"><span class="timeline-date">OCT 2023 – SEP 2025</span><h3>Parts Counter Clerk · NAPA Auto Parts</h3><p>Assisted retail and wholesale customers with parts identification and problem-solving. Used proprietary inventory systems and electronic catalogues to locate products, process requests, and support daily operations.</p></article>
+        <article class="timeline-entry"><span class="timeline-date">JAN – SEP 2023</span><h3>Mobile Security Guard · GardaWorld</h3><p>Worked independently across multiple client locations, responding to changing priorities, following site-specific procedures, and preparing detailed patrol and incident reports.</p></article>
+        <article class="timeline-entry"><span class="timeline-date">DEC 2017 – SEP 2020</span><h3>Assistant Operations Manager · Dairy Queen</h3><p>Advanced through four promotions into an operations management role. Supported daily operations, delegated responsibilities, coached employees, and maintained customer-service and quality-control standards.</p></article>
+        <article class="timeline-entry"><span class="timeline-date">SEP 2018 – JAN 2019</span><h3>Computer Service Technician (Volunteer) · Computers for Schools</h3><p>Upgraded and troubleshot computer systems, performed secure data erasure, identified defective equipment, and completed quality-control testing before systems were prepared for distribution.</p></article>
+      </div>
+    </section>
+
+    <section id="education" class="content-section container" aria-labelledby="education-heading">
+      <p class="section-index">05 / THE LEARNING</p><h2 id="education-heading">Education</h2>
+      <div class="section-panel"><h3>New Brunswick Community College</h3><p><strong>Information Technology: Software Development</strong></p><p>Diploma program · Expected graduation: June 2027</p><p>Relevant studies include object-oriented programming, web development, databases, software engineering, JavaScript, C#, Java, and C++.</p></div>
+    </section>
+
+    <section id="contact" class="content-section container" aria-labelledby="contact-heading">
+      <p class="section-index">06 / SAY HELLO</p><h2 id="contact-heading">Contact</h2>
+      <div class="section-panel"><p>Interested in connecting? I'm always happy to discuss technology, projects, and opportunities to learn.</p><div class="contact-links"><a class="btn btn-primary" href="mailto:alexandergaudet@hotmail.com">Send an Email ↗</a><a class="btn btn-outline-light" href="https://github.com/AleGau00273" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p class="contact-address">alexandergaudet@hotmail.com</p></div>
+    </section>
+  </main>
+  <footer class="container site-footer"><p>© 2026 Alexander Gaudet · Powered by Curiosity. · Built with curiosity and a little nostalgia.</p></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
