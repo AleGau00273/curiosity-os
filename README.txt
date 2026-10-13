@@ -1,7 +1,7 @@
 CURIOSITY OS — Portfolio Website
 ================================
 
-A personal portfolio for Alexander Gaudet, featuring software development, hardware restoration, and home networking projects.
+A personal portfolio for Alexander Gaudet, featuring software development and hardware restoration projects.
 
 FILES
 - index.html: main website
@@ -29,4 +29,3 @@ PROJECTS
 - EcoLink Fleet Manager (collaborative software project)
 - Explore Australia (collaborative responsive web project)
 - Game Boy Advance Restoration
-- Home Ethernet Installation

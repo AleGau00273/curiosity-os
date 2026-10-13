@@ -5,9 +5,8 @@ const slides = [
   {label:"02 / SOFTWARE", title:"ECOLINK", description:"A collaborative C# fleet manager. I designed four interfaces and helped with backend development and integration.", link:"#ecolink-spotlight", linkText:"Explore EcoLink ↗"},
   {label:"03 / WEB DEVELOPMENT", title:"EXPLORE AUSTRALIA", description:"A class project featuring five responsive pages I built using CSS Grid, Flexbox, and Bootstrap.", link:"#australia-spotlight", linkText:"Explore the website ↗"},
   {label:"04 / HARDWARE", title:"HANDHELD REBUILD", description:"I restored and upgraded a Game Boy Advance, practicing soldering, audio modifications, and troubleshooting.", link:"#gba-spotlight", linkText:"See the restoration ↗"},
-  {label:"05 / NETWORKING", title:"HOME ETHERNET", description:"I learned to install Cat6A cabling, terminate connections, and troubleshoot my home network.", link:"#network-spotlight", linkText:"Explore the installation ↗"},
-  {label:"06 / TOOLKIT", title:"ALWAYS LEARNING", description:"C#, JavaScript, SQL, HTML, CSS, and expanding into Java, C++, and ASP.NET Core MVC.", link:"#skills", linkText:"Browse my skills ↗"},
-  {label:"07 / CONNECT", title:"SAY HELLO!", description:"Interested in technology, creative projects, or working together? I'd love to connect.", link:"#contact", linkText:"Get in touch ↗"}
+  {label:"05 / TOOLKIT", title:"ALWAYS LEARNING", description:"C#, JavaScript, SQL, HTML, CSS, and expanding into Java, C++, and ASP.NET Core MVC.", link:"#skills", linkText:"Browse my skills ↗"},
+  {label:"06 / CONNECT", title:"SAY HELLO!", description:"Interested in technology, creative projects, or working together? I'd love to connect.", link:"#contact", linkText:"Get in touch ↗"}
 ];
 const content = document.getElementById("screenContent");
 const counter = document.getElementById("screenCounter");
@@ -194,42 +193,6 @@ if (gbaSlides.length) {
   showGbaSlide(0);
 }
 
-
-// Home networking archive: manual carousel, with video paused when leaving its slide.
-const networkSlides = Array.from(document.querySelectorAll("[data-network-slide]"));
-if (networkSlides.length) {
-  const items = [
-    ["Learning to Terminate Cable", "I learned how to strip and prepare shielded Cat6A cable, arrange the conductors, and terminate them using the T568B wiring standard."],
-    ["The Finished Termination", "Getting the shielded keystone connections right took care and practice, especially when working with stiff Cat6A cable."],
-    ["Centralizing the Connections", "I brought the cable runs together at a central location with a modular patch panel and network equipment."],
-    ["The Completed Installation", "Seeing the finished setup come together was rewarding after learning the tools, components, and wiring techniques from scratch."],
-    ["Testing and Troubleshooting", "My first terminations did not all pass. I used a cable tester to find connection faults, reworked the problem conductors, and verified the results. Press play to watch."]
-  ];
-  let current = 0;
-  const dots = document.getElementById("networkDots");
-  const counter = document.getElementById("networkCounter");
-  const title = document.getElementById("networkSlideTitle");
-  const description = document.getElementById("networkSlideDescription");
-  function show(index) {
-    networkSlides.forEach(slide => slide.querySelectorAll("video").forEach(video => video.pause()));
-    current = (index + networkSlides.length) % networkSlides.length;
-    networkSlides.forEach((slide, i) => { slide.hidden = i !== current; });
-    title.textContent = items[current][0];
-    description.textContent = items[current][1];
-    counter.textContent = `${String(current + 1).padStart(2, "0")} / ${String(networkSlides.length).padStart(2, "0")}`;
-    dots.querySelectorAll("button").forEach((dot, i) => dot.setAttribute("aria-current", String(i === current)));
-  }
-  items.forEach((item, i) => {
-    const dot = document.createElement("button");
-    dot.type = "button";
-    dot.setAttribute("aria-label", `Show network installation item ${i + 1}: ${item[0]}`);
-    dot.addEventListener("click", () => show(i));
-    dots.append(dot);
-  });
-  document.getElementById("networkPrevious").addEventListener("click", () => show(current - 1));
-  document.getElementById("networkNext").addEventListener("click", () => show(current + 1));
-  show(0);
-}
 
 
 // Explore Australia: compact preview carousel, separate from the existing galleries.
